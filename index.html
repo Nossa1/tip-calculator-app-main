@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@800;900&family=Manrope:wght@800&family=Plus+Jakarta+Sans:wght@500;800&family=Rubik:wght@300;400;500&family=Space+Grotesk:wght@500&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+        #theBill1{
+            background-image:url(icon-dollar.svg);
+            background-repeat: no-repeat;
+            background-position: 10px;
+            text-align: right;
+            padding: 5px;
+            color: hsl(183, 100%, 15%);
+        }
+        #theNumber1{
+            background-image:url(icon-person.svg);
+            background-repeat: no-repeat; 
+            background-position: 10px;
+            text-align: right;
+            padding: 5px;
+            color: hsl(183, 100%, 15%);
+        }
+        ::placeholder {
+            color: hsl(186, 14%, 43%); ;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+
+    <link rel="stylesheet" href="index.css">
+<body>
+
+        <div class="header">
+            <picture>
+                <img src="logo.svg">
+            </picture>
+        </div>
+       
+        <div class="container">
+
+         <div class="left"> 
+            <div class="bill">
+                <label class="theBill">Bill</label>
+                <input class="theBill" id="theBill1" type="number">
+            </div>
+
+            <div class="tip">
+                <label>Select Tip %</label>
+                <div class="percentDiv" id="btnTips">
+                    <button   type="radio"name="options" id="5" value="5">5%</button>
+                    <button  type="radio" name="options" id="10" value="10">10%</button>
+                    <button  type="radio" name="options" id="15" value="15">15%</button>
+                    <button  type="radio" name="options" id="25" value="25">25%</button>
+                    <button type="radio" name="options" id="50" value="50">50%</button>
+                    <input type="number" placeholder="Custom" id="myCustom">
+                    
+                </div>
+            </div>
+
+            <div class="numberPeople">
+                <label class="theNumber">Number of People</label>
+                <input type="number" class="theNumber" id="theNumber1">
+            </div>
+        </div>     
+
+            <div class="display">
+                <div class="tipDiv">
+                    <h6>Tip Amount<br><span style="color:hsl(186, 14%, 43%)">/ person</span></h6>
+                    <output id="tipAmount">$0.00</output>
+                </div>
+
+                <div class="totalDiv">
+                    <h6>Total<br><span style="color:hsl(186, 14%, 43%)">/ person</span></h6>
+                    <output>$0.00</output>
+                </div>    
+
+                <div class="btnDiv">
+                    <button  id="resetBtn">RESET</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+  
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
